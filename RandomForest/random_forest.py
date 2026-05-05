@@ -228,11 +228,4 @@ def draw_tree(my_tree, filename='Digraph'):
             os.remove(file)
     graph = graphviz.Digraph(comment="Decision Tree")
     draw_node(graph, my_tree)
-    # graph.render(view=True) #This saves Digraph.gv and Digraph.gv.pdf
-    in_wsl = False
-    in_wsl = 'microsoft-standard' in uname().release
-    if in_wsl:
-        graph.render(f'{filename}.gv', view=False)
-        os.system(f'cmd.exe /C start {filename}.gv.pdf')
-    else:
-        graph.render(view=True)
+    graph.render(f'{filename}.gv', view=False)
