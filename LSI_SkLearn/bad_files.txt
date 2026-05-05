@@ -1,0 +1,10 @@
+These files are included in Addresses_old.zip but they have weird uninterpretable characters in them which cause a problem when Python tries to read it.
+Addresses.zip has the rest of the files, which do work.
+It would be nice to fix these files and add them back in to Addresses.zip.
+
+./Addresses/1974-Nixon.txt
+./Addresses/1972-Nixon.txt
+./Addresses/1954-Eisenhower.txt
+./Addresses/1973-Nixon.txt
+./Addresses/1970-Nixon.txt
+./Addresses/1971-Nixon.txt
