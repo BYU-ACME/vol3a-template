@@ -18,16 +18,16 @@ from time import perf_counter as time
 class Question:
     """Questions to use in construction and display of Decision Trees.
     Attributes:
-        column (int): which column of the data this question asks
-        value (int/float): value the question asks about
-        features (str): name of the feature asked about
+        column_idx (int): which column of the data this question asks
+        value (int/float): value the question is comparing to
+        feature (str): name of the feature asked about
     Methods:
         match: returns boolean of if a given sample answered T/F"""
 
-    def __init__(self, column, value, feature_names):
-        self.column = column
+    def __init__(self, column_idx, value, feature_names):
+        self.column_idx = column_idx
         self.value = value
-        self.features = feature_names[self.column]
+        self.feature = feature_names[self.column_idx]
 
     def match(self, sample):
         """Returns T/F depending on how the sample answers the question
