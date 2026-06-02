@@ -1,4 +1,4 @@
-Year,Population,Total,Violent,Property,Murder,Forcible Rape,Robbery,Aggravated Assault,Burglary,Larceny,Vehicle Theft
+Year,Population,Total Crime,Violent,Property,Murder,Forcible Rape,Robbery,Aggravated Assault,Burglary,Larceny,Vehicle Theft
 1960,179323175,3384200,288460,3095700,9110,17190,107840,154320,912100,1855400,328200
 1961,182992000,3488000,289390,3198600,8740,17220,106670,156760,949600,1913000,336000
 1962,185771000,3752200,301510,3450700,8530,17550,110860,164570,994300,2089600,366800
