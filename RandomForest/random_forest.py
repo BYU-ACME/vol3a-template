@@ -132,7 +132,7 @@ class Decision_Node:
         raise NotImplementedError('Problem 3 Incomplete')
 
 
-# Prolem 4
+# Problem 4
 def build_tree(data, feature_names, min_samples_leaf=5, max_depth=4, current_depth=0, random_subset=False):
     """Build a classification tree using the classes Decision_Node and Leaf
     Parameters:
