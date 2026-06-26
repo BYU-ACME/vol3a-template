@@ -4,6 +4,7 @@ Contains a class that simulates the game of Wordle; used for problems 5-7.
 Note to students: your code goes in information_theory.py, not this file.
 """
 # mid semester update test
+# mid semester update test 2
 import numpy as np
 # Used for formatting
 import colorama
