@@ -8,7 +8,7 @@ Date
 from platform import uname
 import graphviz
 import os
-from sklearn.ensemble import RandomForestClassifier # Mid semester update test!
+from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 from uuid import uuid4
 import random
@@ -43,10 +43,10 @@ class Question:
 def partition(data, question):
     """Splits the data into left (true) and right (false)
     Parameters:
-        data ((m,n), ndarray): data to partition
+        data ((m, n), ndarray): data to partition
         question (Question): question to split on
     Returns:
-        left ((j,n), ndarray): Portion of the data matching the question
+        left ((j, n), ndarray): Portion of the data matching the question
         right ((m-j, n), ndarray): Portion of the data NOT matching the question
     """
     raise NotImplementedError('Problem 1 Incomplete')

@@ -17,7 +17,7 @@ def get_guess_result(guess, true_word):
         1 - incorrect location but present in word
         0 - not present in word
     For example, if the secret word is "boxed" and the provided guess is "excel", the
-    function should return [0,1,0,2,0].
+    function should return [0, 1, 0, 2, 0].
 
     Arguments:
         guess (string) - the guess being made
@@ -44,7 +44,7 @@ def compute_highest_entropy(all_guess_results, allowed_guesses):
     Compute the entropy of each allowed guess.
 
     Arguments:
-        all_guess_results ((n,m) ndarray) - the array found in
+        all_guess_results ((n, m) ndarray) - the array found in
             all_guess_results.npy, containing the results of each
             guess for each secret word, where n is the the number
             of allowed guesses and m is number of possible secret words.
@@ -96,7 +96,7 @@ def play_game_naive(game, all_guess_results, possible_secret_words, allowed_gues
     Arguments:
         game (wordle.WordleGame)
             the Wordle game object
-        all_guess_results ((n,m) ndarray)
+        all_guess_results ((n, m) ndarray)
             The array found in all_guess_results.npy,
             containing the result of making any allowed
             guess for any possible secret word
@@ -127,7 +127,7 @@ def play_game_entropy(game, all_guess_results, possible_secret_words, allowed_gu
     Arguments:
         game (wordle.WordleGame)
             the Wordle game object
-        all_guess_results ((n,m) ndarray)
+        all_guess_results ((n, m) ndarray)
             The array found in all_guess_results.npy,
             containing the result of making any allowed
             guess for any possible secret word
@@ -157,7 +157,7 @@ def compare_algorithms(all_guess_results, possible_secret_words, allowed_guesses
 
 
     Arguments:
-        all_guess_results ((n,m) ndarray)
+        all_guess_results ((n, m) ndarray)
             The array found in all_guess_results.npy,
             containing the result of making any allowed
             guess for any possible secret word
