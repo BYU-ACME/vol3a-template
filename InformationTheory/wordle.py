@@ -9,6 +9,7 @@ import numpy as np
 import colorama
 from colorama import Fore, Style
 colorama.init()
+rng = np.random.default_rng()
 
 def load_words(filen):
     with open(filen, 'r') as file:
@@ -28,7 +29,7 @@ class WordleGame:
         Initializes a game of Wordle.
         """
         if word is None:
-            word = np.random.choice(self.possible_words)
+            word = rng.choice(self.possible_words)
         else:            
             word = word.lower().strip()
             # Validate the word

@@ -185,7 +185,7 @@ def analyze_forest(dataset, forest):
     raise NotImplementedError('Problem 6 Incomplete')
 
 # Problem 7
-def prob7():
+def prob7(dataset='parkinsons.csv', features='parkinsons_features.csv'):
     """ Using the file parkinsons.csv, return three tuples of floats. For tuples 1 and 2,
         randomly select 130 samples; use 100 for training and 30 for testing.
         For tuple 3, use the entire dataset with an 80-20 train-test split.
